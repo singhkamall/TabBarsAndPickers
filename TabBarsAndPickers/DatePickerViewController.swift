@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DatePickerViewController.swift
 //  TabBarsAndPickers
 //
 //  Created by Student on 2017-10-11.
@@ -8,12 +8,11 @@
 
 import UIKit
 
-class ViewController: UITabBarController {
+class DatePickerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        
     }
-
-
 }
-
