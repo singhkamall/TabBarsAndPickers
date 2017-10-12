@@ -107,10 +107,17 @@
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sht-TG-JP8">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="2Fq-tT-LjQ" id="qkY-0w-0my"/>
+                                    <outlet property="delegate" destination="2Fq-tT-LjQ" id="TbW-Z5-i6Z"/>
+                                </connections>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUZ-3Q-Ivc">
                                 <rect key="frame" x="165" y="252" width="44" height="30"/>
                                 <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="OnButonPressed:" destination="2Fq-tT-LjQ" eventType="touchUpInside" id="VMB-qr-bRH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -123,6 +130,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Single" image="singleicon" id="VlD-z0-6yg"/>
+                    <connections>
+                        <outlet property="singlePicker" destination="sht-TG-JP8" id="v52-R7-ZG9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D4r-JH-I0i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -151,6 +161,7 @@
                                 <date key="maximumDate" timeIntervalSinceReferenceDate="1167562800">
                                     <!--2037-12-31 11:00:00 +0000-->
                                 </date>
+                                <locale key="locale" localeIdentifier="en_CA"/>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ato-rR-fCa">
                                 <rect key="frame" x="165" y="243" width="44" height="30"/>

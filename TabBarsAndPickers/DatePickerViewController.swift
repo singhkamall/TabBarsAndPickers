@@ -21,7 +21,11 @@ class DatePickerViewController: UIViewController {
     
     
     @IBAction func onButtonPressed(_ sender: UIButton) {
+        
+        
         let date = datePicker.date
+        
+        datePicker.timeZone = TimeZone(secondsFromGMT: 8*60*60);
         
         let message =  "The date and Time you selected is \(date)"
         
