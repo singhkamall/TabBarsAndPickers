@@ -155,6 +155,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ato-rR-fCa">
                                 <rect key="frame" x="165" y="243" width="44" height="30"/>
                                 <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="onButtonPressed:" destination="u3Z-7v-Gr0" eventType="touchUpInside" id="49O-Pa-Kwi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -167,6 +170,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Date" image="clockicon" id="Jv1-pd-kgE"/>
+                    <connections>
+                        <outlet property="datePicker" destination="0GN-We-A7M" id="fcG-cl-Yby"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GW1-AP-jjy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
